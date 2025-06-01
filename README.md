@@ -3,7 +3,9 @@
 
 Due to GitHub's restriction on uploading files larger than 100MB, the video was split into two segments. The following command is needed to merge them:
 ```bash
-ffmpeg -i "concat:DDN_latent_vis_with_BGM_0.mp4|DDN_latent_vis_with_BGM_1.mp4" -c copy output.mp4
+ffmpeg -f concat -safe 0 \
+       -i <(printf "file '%s'\n" "$PWD"/DDN_latent_vis_with_BGM_{0,1}.mp4) \
+       -c copy -movflags +faststart output.mp4
 ```
 
 
