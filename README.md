@@ -1,5 +1,5 @@
 # Visualization of Latent Space of Discrete Distribution Networks during Optimization
-**Uncompressed raw video**
+**Uncompressed raw video of [YouTube version](https://youtu.be/J4aOdyb7A58) and [BiliBili version](https://www.bilibili.com/video/BV11tjdzbEoD/)**
 
 Due to GitHub's restriction on uploading files larger than 100MB, the video was split into two segments. The following command is needed to merge them:
 ```bash
